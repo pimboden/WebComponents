@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale 1.0" />
+    <title>Web component Lesson1</title>
+    <style>
+      h3 {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Hello World</h3>
+    <user-card display-name="Patrick Imboden" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+      <div slot="email">pimboden@msn.com</div>
+      <div slot="phone">+41 77 777 77 77</div>
+    </user-card>
+    <user-card display-name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/3.jpg">
+      <div slot="email">jdoe@msn.com</div>
+      <div slot="phone">+41 88 888 88 88</div>
+    </user-card>
+    <!-- <user-card display-name="Kalle Fätskä" avatar="https://randomuser.me/api/portraits/women/3.jpg"></user-card> -->
+    <script src="userCard.js"></script>
+  </body>
+</html>
