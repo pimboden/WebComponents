@@ -1,0 +1,30 @@
+<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Component Tester</title>
+  </head>
+  <body>
+    <h3>Hello World</h3>
+    <user-card display-name="Patrick Imboden" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+      <div slot="email">pimboden@msn.com</div>
+      <div slot="phone">+41 77 777 77 77</div>
+    </user-card>
+    <user-card display-name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/3.jpg">
+      <div slot="email">jdoe@msn.com</div>
+      <div slot="phone">+41 88 888 88 88</div>
+    </user-card>
+    <coin-tracker pair="SOL-USD" background="yellow"></coin-tracker>
+
+    <script type="module">
+      import { register } from './dist_cryptoWC/index.js';
+      register();
+    </script>
+
+    <!-- <user-card display-name="Kalle Fätskä" avatar="https://randomuser.me/api/portraits/women/3.jpg"></user-card> -->
+    <script src="./userCard/userCard_min.js"></script>
+  </body>
+</html>
